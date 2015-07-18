@@ -332,7 +332,7 @@ expression !~ /regexpr/
 内置字符串函数：
 ![built-in string functions](https://github.com/anxiaoyi/awk-learning/blob/master/images/built-in-string-functions.png)
 
-### 数组
+#### 数组
 ```
 if ('hello' in array) { 
 	# your code goes here
@@ -351,14 +351,14 @@ for (i = 1; i <= 10; i++) {
 if ((i, j) in arr) ...
 ```
 
-### 自定义函数
+#### 自定义函数
 ```
 function name(parameter-list) { 
 	statements
 }
 ```
 
-### 输出
+#### 输出
 输出到文件bigpop：
 ```
 $3 > 100 {print $1, $3 > "bigpop"}
@@ -375,9 +375,24 @@ print message > "/dev/tty" #write directly on terminal
 close("sort")
 ```
 
-### 输入
+#### 输入
 ```
 awa `program` data
 
 egrep 'Asia' data_file | awak 'program'
+
+"date" | getline d # d will store current date
+
+getline x < file # x will store current line
 ```
+
+#### 命令行参数
+```
+BEGIN { 
+	for (i=1; i<ARGC; i++) { 
+		print "%s ", ARGV[i]
+	}
+}
+```
+
+### 和其他程序交流
