@@ -273,3 +273,55 @@ END {print NR}
 ```
 {print $NF}
 ```
+
+## AWK 语言
+
+### 模式
+所有模式总结：
+```
+BEGIN {statements}
+
+END {statements}
+
+expression {statements}
+
+/regular expression {statements}
+
+compound expression {statements}
+
+pattern1, pattern2 {statements} # A range pattern matches each input line from a line matched by pattern1, to the next line matched by pattern2.
+```
+
+#### BEGIN and END
+修改默认的字段分隔符
+```
+BEGIN {FS = "\t"}
+```
+
+#### 字符串匹配模式
+```
+/regexpr/
+
+#组合
+expression ~ /regexpr/
+
+#排除
+expression !~ /regexpr/
+```
+
+`/Asia`和`$0 ~ /Asia/`相同
+
+#### 正则表达式
+```
+#元字符
+\ ^ $ . [ ] | ( ) * + ?
+```
+
+#### 范围模式
+
+### Actions
+
+#### 表达式
+
+内置变量：
+![build-in variables](https://github.com/anxiaoyi/awk-learning/images/built-in-variables.png)
