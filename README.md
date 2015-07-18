@@ -324,4 +324,4 @@ expression !~ /regexpr/
 #### 表达式
 
 内置变量：
-![build-in variables](https://github.com/anxiaoyi/awk-learning/images/built-in-variables.png)
+![build-in variables](https://github.com/anxiaoyi/awk-learning/blob/master/images/built-in-variables.png)
