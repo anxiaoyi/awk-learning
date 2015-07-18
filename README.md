@@ -30,12 +30,12 @@ awk一行接着一行扫描，然后尝试匹配pattern
 awk -f progfile
 ```
 
-Beth 4.00 0
-Dan 3.75 0
-Kathy 4.00 10
-Mark 5.00 20
-Mary 5.50 22
-Susie 4.25 18
+Beth 4.00 0<br/>
+Dan 3.75 0<br/>
+Kathy 4.00 10<br/>
+Mark 5.00 20<br/>
+Mary 5.50 22<br/>
+Susie 4.25 18<br/>
 
 - 打印出工作时间大于0的每个人的姓名和总报酬
 
