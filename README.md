@@ -327,10 +327,10 @@ expression !~ /regexpr/
 ![build-in variables](https://github.com/anxiaoyi/awk-learning/blob/master/images/built-in-variables.png)
 
 内置算数函数：
-![built-in arithmetic functions](http://github.com/anxiaoyi/awk-learning/blob/master/images/built-in-arithmetic-functions.png)
+![built-in arithmetic functions](https://github.com/anxiaoyi/awk-learning/blob/master/images/built-in-arithmetic-functions.png)
 
 内置字符串函数：
-![built-in string functions](http://github.com/anxiaoyi/awk-learning/blob/master/images/built-in-string-functions.png)
+![built-in string functions](https://github.com/anxiaoyi/awk-learning/blob/master/images/built-in-string-functions.png)
 
 ### 数组
 ```
