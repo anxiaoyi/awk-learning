@@ -325,3 +325,59 @@ expression !~ /regexpr/
 
 内置变量：
 ![build-in variables](https://github.com/anxiaoyi/awk-learning/blob/master/images/built-in-variables.png)
+
+内置算数函数：
+![built-in arithmetic functions](http://github.com/anxiaoyi/awk-learning/blob/master/images/built-in-arithmetic-functions.png)
+
+内置字符串函数：
+![built-in string functions](http://github.com/anxiaoyi/awk-learning/blob/master/images/built-in-string-functions.png)
+
+### 数组
+```
+if ('hello' in array) { 
+	# your code goes here
+}
+
+for (i in array) { 
+	delete array[i]
+}
+
+for (i = 1; i <= 10; i++) { 
+	for (j = 1; j <= 10; j++) { 
+		arr[i, j] = 0
+	}
+}
+
+if ((i, j) in arr) ...
+```
+
+### 自定义函数
+```
+function name(parameter-list) { 
+	statements
+}
+```
+
+### 输出
+输出到文件bigpop：
+```
+$3 > 100 {print $1, $3 > "bigpop"}
+$3 > 100 {print $1, $3 >> "bigpop"} #append
+$3 > 100 {print $1, $3 | "sort"} #output into pipes
+
+print message | "cat 1>&2" #redirect cat to stderr
+print message > "/dev/tty" #write directly on terminal
+```
+
+假设你想要往一个文件中写入东西，然后稍后再读取出来，那么`close()`是必须的，这也是因为操作系统定义的限制。
+
+```
+close("sort")
+```
+
+### 输入
+```
+awa `program` data
+
+egrep 'Asia' data_file | awak 'program'
+```
